@@ -508,5 +508,20 @@
       modal.find('.modal-body #imageDetails').html(imageDetails);
     });
   </script>
+    <script>
+        document.querySelectorAll('nav a').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault(); // Prevent default jump
+                const targetId = this.getAttribute('href').substring(1); // Get the section ID
+                const targetSection = document.getElementById(targetId);
+                
+                if (targetSection) {
+                    targetSection.scrollIntoView({
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+    </script>
 </body>
 </html>
