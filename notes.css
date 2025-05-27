@@ -1,0 +1,16 @@
+:root {
+    --red: #ec185d;
+    --green: #1bb74f;
+    --blue: #1e549f;
+    --yellow: #ffc107;
+
+    --primary: var(--blue);
+    --secondary: var(--red);
+    --success: var(--green);
+    --info: var(--blue);
+    --warning: var(--yellow);
+    --danger: var(--red);
+    --light: #f8f9fa;
+    --dark: #212529;
+    /* ...keep other variables as needed */
+}
