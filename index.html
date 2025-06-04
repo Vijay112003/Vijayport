@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>VIJAY SARATHI</title>
+    <link rel="icon" type="image/png" href="assets/imgs/profile.ico">
+    <link rel="stylesheet" href="style.css">
+</head>
+<br>
+<body id="body">
+    <nav>
+        <a href="#body">
+            <span>VIJAY SARATHI</span>
+        </a>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#achievements">Achievements</a></li>
+            <li><a href="#references">References</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+        <button class="toggle-btn" onclick="toggleMode()" aria-label="Toggle Dark/Light Mode">
+            <span id="mode-icon">
+                <svg id="sun-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <circle cx="12" cy="12" r="5"/>
+                    <g id="sun-rays-light">
+                        <path d="M12 2v2"/>
+                        <path d="M12 20v2"/>
+                        <path d="M4.93 4.93l1.06 1.06"/>
+                        <path d="M17.99 17.99l1.06 1.06"/>
+                        <path d="M2 12h2"/>
+                        <path d="M20 12h2"/>
+                        <path d="M4.93 19.07l1.06-1.06"/>
+                        <path d="M17.99 6.01l1.06-1.06"/>
+                    </g>
+                    <g id="sun-rays-dark" style="display:none;">
+                        <path d="M12 1v4"/>
+                        <path d="M12 19v4"/>
+                        <path d="M3.51 3.51l2.12 2.12"/>
+                        <path d="M18.37 18.37l2.12 2.12"/>
+                        <path d="M1 12h4"/>
+                        <path d="M19 12h4"/>
+                        <path d="M3.51 20.49l2.12-2.12"/>
+                        <path d="M18.37 5.63l2.12-2.12"/>
+                    </g>
+                </svg>
+            </span>
+        </button>
+    </nav>
+    <main>
+        <!-- Scroll to Top Button -->
+        <button id="scrollToTopBtn" aria-label="Scroll to Home Section" style="position: fixed; bottom: 82px; right: 32px; z-index: 1000; display: none; background: #ff9800; color: #fff; border: none; border-radius: 50%; width: 48px; height: 48px; box-shadow: 0 2px 8px rgba(0,0,0,0.2); font-size: 24px; cursor: pointer;">
+            &#8679;
+        </button>
+        
+        <header id="home" class="header scroll-animate">
+            <!-- Image Slider Start: above header content, centered -->
+            <div class="image-slider scroll-animate">
+                <div class="slides">
+                    <img src="assets/imgs/2.jpeg" alt="Slide 1">
+                    <img src="assets/imgs/1.jpeg" alt="Slide 2">
+                    <img src="assets/imgs/3.jpeg" alt="Slide 3">
+                </div>
+                <button class="slider-btn prev" aria-label="Previous Slide">&#10094;</button>
+                <button class="slider-btn next" aria-label="Next Slide">&#10095;</button>
+                <div class="slider-dots">
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                </div>
+            </div>
+            <!-- Header Content Below Slider -->
+            <div class="header-content">
+                <h1 class="header-title">
+                    <span class="up">HI!</span>
+                    <span class="down">I am VIJAY SARATHI</span>
+                    <span class="down">
+                        Bachelor of Engineering in Computer Science
+                    </span>
+                </h1>
+                <p class="header-subtitle"><br>Software Developer at 
+                    <img src="./assets/imgs/zoho.png" alt="Zoho Corporation">
+                </p>
+                <button class="btn" onclick="document.querySelector('#about').scrollIntoView({ behavior: 'smooth' }); return false;">
+                    <a href="#about" style="color: inherit; text-decoration: none;">About me</a>
+                </button>
+            </div>
+        </header>
+        <section class="video-card-section section scroll-animate">
+            <div class="video-card">
+                <div class="video-card-media">
+                    <!-- Use <video> instead of <iframe> for mp4 -->
+                    <iframe width="100%" height="315" src="./assets/Videos/video.mp4" frameborder="0" allowfullscreen></iframe>
+                </div>
+                <div class="video-card-content">
+                    <h3>Introduction Video</h3>
+                    <p>
+                        Watch my quick introduction and get to know more about my journey and skills.
+                    </p>
+                </div>
+            </div>
+        </section>
+        <section class="section pt-0 scroll-animate" id="about">
+            <div style="text-align: center"><br><br><br>
+                <p class="section-subtitle zoho-yellow">Who Am I?</p>
+                <h2 class="section-title mb-3 zoho-red">About Me</h2>
+            </div>
+            <div class="container">
+                <!-- Left: About Content -->
+                <div class="about-caption scroll-animate">
+                    <p class="description-about zoho-blue typewriter scroll-animate" id="about-typewriter"></p>
+                    <div id="about-buttons">
+                        <button class="btn-rounded btn btn-outline-primary mt-4 scroll-animate" id="resume-btn">
+                            Resume
+                        </button>
+                        <button class="btn-rounded btn btn-outline-primary mt-4 scroll-animate"><a href="https://instagram.com/naan_vijay._" target="_blank">Instagram</a></button>
+                        <button class="btn-rounded btn btn-outline-primary mt-4 scroll-animate"><a href="https://github.com/Vijay112003" target="_blank">Github</a></button>
+                        <button class="btn-rounded btn btn-outline-primary mt-4 scroll-animate"><a href="https://www.linkedin.com/in/vijay-sarathi-g-493033241/" target="_blank">Linked-in</a></button>
+                        <button class="btn-rounded btn btn-outline-primary mt-4 scroll-animate"><a href="https://www.codechef.com/users/vijay_sarathi" target="_blank">Code-chef</a></button>
+                        <button class="btn-rounded btn btn-outline-primary mt-4 scroll-animate"><a href="https://www.hackerrank.com/profile/vijaywithccet" target="_blank">HackerRank</a></button>
+                        <button class="btn-rounded btn btn-outline-primary mt-4 scroll-animate"><a href="https://leetcode.com/vijaywithccet/" target="_blank">Leet-code</a></button>
+                    </div>
+                </div>
+                <!-- Right: Profile Image -->
+                <div class="about-img-holder">
+                    <img src="assets/imgs/profile1.jpg" class="about-img" alt="Profile photo">
+                </div>
+            </div>
+        </section>
+        <section id="experience" class="scroll-animate">
+            <div style="text-align: center;">
+                <h2>Experience</h2>
+                <p>Details about my experience.</p>
+            </div>
+            <div class="experience-cards scroll-animate">
+                <div class="card scroll-animate">
+                    <img src="assets/imgs/pencil-case.svg" alt="Web-Design">
+                    <h3>Web-Design</h3>
+                    <p>HTML<br>CSS<br>JS<br>PHP</p>
+                </div>
+                <div class="card scroll-animate">
+                    <img src="assets/imgs/analytics.svg" alt="Database">
+                    <h3>Database</h3>
+                    <p>
+                        SQLite3 in Python<br>
+                        MySQL<br>
+                        JDBC in Java
+                    </p>
+                </div>
+            </div>
+            <div class="experience-cards scroll-animate">
+                <div class="card scroll-animate">
+                    <img src="assets/imgs/responsive.svg" alt="Tools & Platforms">
+                    <h3>Tools & Platforms</h3>
+                    <p>
+                        GitHub<br>
+                        ChatGPT<br>
+                        VS Code<br>
+                        Git
+                    </p>
+                </div>
+                <div class="card scroll-animate">
+                    <img src="assets/imgs/toolbox.svg" alt="Languages">
+                    <h3>Languages</h3>
+                    <p>
+                        Python<br>
+                        Java<br>
+                        C++<br>
+                        C
+                    </p>
+                </div>
+            </div>
+        </section>
+        <section id="portfolio" class="scroll-animate">
+            <div style="text-align: center;">
+                <h2>Portfolio</h2>
+                <p>My work portfolio.</p>
+            </div>
+            <div class="portfolio-cards scroll-animate">
+                <a href="https://github.com/Vijay112003/OQuiz" target="_blank" class="card scroll-animate">
+                    <img src="assets/imgs/projects/quiz.png" alt="ONLINE QUIZ">
+                    <h3>ONLINE QUIZ</h3>
+                    <p>Category: Web Development</p>
+                </a>
+                <a href="https://github.com/Vijay112003/Java-Calc" target="_blank" class="card scroll-animate">
+                    <img src="assets/imgs/projects/calc.png" alt="DIGI CALC">
+                    <h3>DIGI CALC</h3>
+                    <p>Category: JAVA based</p>
+                </a>
+                <a href="https://github.com/Vijay112003/Vijay112003-Absentees-Late-Comers" target="_blank" class="card scroll-animate">
+                    <img src="assets/imgs/projects/abs.png" alt="ABS">
+                    <h3>ABS</h3>
+                    <p>Category: Web Development</p>
+                </a>
+                <a href="https://github.com/Vijay112003/Mobile-Point" target="_blank" class="card scroll-animate">
+                    <img src="assets/imgs/projects/mobile.png" alt="Mobile Point">
+                    <h3>Mobile Point</h3>
+                    <p>Category: Python Based</p>
+                </a>
+                <a href="https://github.com/Vijay112003/OJPS" target="_blank" class="card scroll-animate">
+                    <img src="assets/imgs/projects/OJPS.png" alt="OJPS">
+                    <h3>OJPS</h3>
+                    <p>Category: Web Development</p>
+                </a>
+                <a href="https://github.com/Vijay112003/Project-J.U.N.E" target="_blank" class="card scroll-animate">
+                    <img src="assets/imgs/projects/movie.png" alt="MRS">
+                    <h3>J.U.N.E</h3>
+                    <p>Category: Automation</p>
+                </a>
+            </div>
+        </section>
+        <section id="achievements" class="scroll-animate">
+            <div style="text-align: center;">
+                <h2>Achievements</h2>
+                <p>My achievements and recognitions.</p>
+            </div>
+            <div class="achievement-cards scroll-animate">
+                <div class="card scroll-animate">
+                    <div style="text-align: center;">
+                        <img src="./assets/imgs/winning.png" alt="Winning">
+                    </div>
+                    <h6>Winning</h6>
+                    <button type="button" class="btn btn-primary" data-image-id="1">
+                        View
+                    </button>
+                </div>
+                <div class="card scroll-animate">
+                    <div style="text-align: center;">
+                        <img src="./assets/imgs/participate.png" alt="Participated">
+                    </div>
+                    <h6>Participated</h6>
+                    <button type="button" class="btn btn-primary" data-image-id="2">
+                        View
+                    </button>
+                </div>
+            </div>
+            <div class="achievement-cards scroll-animate">
+                <div class="card scroll-animate">
+                    <div style="text-align: center;">
+                        <img src="./assets/imgs/others.webp" alt="Achievements">
+                    </div>
+                    <h6>Others</h6>
+                    <button type="button" class="btn btn-primary" data-image-id="3">
+                        View
+                    </button>
+                </div>
+            </div>
+        </section>
+        <!-- Modal -->
+        <div id="achievementModal" class="modal hidden">
+            <div class="modal-content">
+            <span class="modal-close" onclick="closeModal()">&times;</span>
+            <h2 id="modal-title"></h2>
+            <div class="modal-images"></div>
+            </div>
+        </div>
+        <section id="references" class="scroll-animate">
+            <div style="text-align: center;">
+                <h2>References</h2>
+                <p>References from mentors.</p>
+            </div>
+            <div class="reference-cards scroll-animate">
+                <div class="card scroll-animate">
+                    <div style="align-items: center;">
+                        <img src="./assets/imgs/ref1.jpg" alt="Reference 1" style="width: 100%; height: 100%;">
+                    </div>
+                    <div>
+                        <h6>Mr.R.Rajkumar, HOD/CSE</h6>
+                        <p>Chettinad College of Engineering & Technology, Karur<br>Email    :rajkumar@chettinadtech.ac.in<br>Mobile :+91 97872 88434</p>
+                    </div>
+                </div>
+            <!-- </div>
+            <div class="reference-cards scroll-animate"> -->
+                <div class="card scroll-animate">
+                    <div style="align-items: center;">
+                        <img src="./assets/imgs/ref2.jpg" alt="Reference 2" style="width: 100%; height: 100%;">
+                    </div>
+                    <div>
+                        <h6>Dr.T.Gobinath, AP/CSE</h6>
+                        <p>Chettinad College of Engineering & Technology, karur<br>Email    :gobinath19@gmail.com<br>Mobile :+91 99445 88207</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="contact" class="scroll-animate">
+            <div style="text-align: center;">
+                <h2>Contact Me</h2>
+                <p>How to get in touch with me.</p>
+            </div>
+            <form action="https://formspree.io/f/mrbkzpbk" method="POST" class="scroll-animate">
+                <div class="form-group">
+                    <label for="name">Your Name</label>
+                    <input type="text" id="name" name="name" required placeholder="e.g. Vijay Sarathi">
+                </div>
+                <div class="form-group">
+                    <label for="email">Your Email</label>
+                    <input type="email" id="email" name="email" required placeholder="e.g. you@email.com">
+                </div>
+                <div class="form-group">
+                    <label for="message">Your Message</label>
+                    <textarea id="message" name="message" required placeholder="Type your message here..." rows="5"></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">
+                    Send
+                </button>
+            </form>
+        </section>
+    </main>
+    <footer class="footer-scroll-animate">
+        <p>&copy; 2025 Vijay Sarathi. All rights reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
