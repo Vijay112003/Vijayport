@@ -81,7 +81,7 @@ document.addEventListener('DOMContentLoaded', function() {
 })();
 
 // ==================== Typewriter Effect (About Section) ====================
-const zohoabt="I am excited to begin a new chapter in my career as a <span class="zoho-green"><strong>Software Developer at <img src="./assets/imgs/zoho.png" alt="Zoho Corporation" style="height: 30px; vertical-align: middle; opacity: 0.8;"></strong></span>. This opportunity is a result of consistent effort, passion, and a commitment to excellence.\n\n";
+const zohoabt=`I am excited to begin a new chapter in my career as a <span class="zoho-green"><strong>Software Developer at <img src="./assets/imgs/zoho.png" alt="Zoho Corporation" style="height: 30px; vertical-align: middle; opacity: 0.8;"></strong></span>. This opportunity is a result of consistent effort, passion, and a commitment to excellence.\n\n`;
 const aboutTexts = [
     `With a strong foundation in computer science, I specialize in writing clean, scalable code and delivering impactful solutions. I thrive in dynamic environments and enjoy collaborating with innovative teams to solve challenging problems.\n\n`,
     `I was honored with the title of <strong>Mr. CSE - 2024</strong> at my college, a recognition that reflects my technical dedication, leadership, and continual learning mindset.`
