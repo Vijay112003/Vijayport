@@ -1,5 +1,4 @@
-
-        :root {
+:root {
     --orange: #ff9800;
     --orange-light: #ffa726;
     --orange-dark: #ff950b8a;
@@ -16,10 +15,17 @@
     --font-heading: 'Segoe UI Semibold', 'Arial Black', Impact, sans-serif;
 }
 
-body section .portfolio-cards .card img,
-body main section, .header, .video-card, .card, .achievement-cards .card, .reference-cards .card, form, #achievementModal .modal-content, #achievementModal .modal-content img {
+body,
+main section,
+.header,
+.video-card,
+.card,
+.achievement-cards .card,
+.reference-cards .card,
+form,
+#achievementModal .modal-content,
+#achievementModal .modal-content img {
     transition: background-color 1s, color 1s, box-shadow .4s, border-color 1s, filter 1s, outline-color 1s;
-    border: 1px solid rgb(255,146,73);
 }
 
 body {
@@ -38,7 +44,9 @@ main {
     padding-top: 60px;
 }
 
-main section, .header, .video-card {
+main section,
+.header,
+.video-card {
     border-radius: 18px;
     box-shadow: 0 4px 24px rgba(0,0,0,0.08);
     background: rgba(255,255,255,0.95);
@@ -57,7 +65,10 @@ main section:hover {
     transform: translateY(-2px) scale(1.01);
 }
 
-main section h1, main section h2, #achievements h2, #references h2 {
+main section h1,
+main section h2,
+#achievements h2,
+#references h2 {
     font-family: var(--font-heading);
     font-size: 2.1rem;
     color: var(--orange);
@@ -66,7 +77,9 @@ main section h1, main section h2, #achievements h2, #references h2 {
     text-shadow: 1px 2px 8px #eee;
 }
 
-main section p, #achievements p, #references p {
+main section p,
+#achievements p,
+#references p {
     font-size: 1.13rem;
     color: #333;
     line-height: 1.7;
@@ -75,8 +88,10 @@ main section p, #achievements p, #references p {
 
 nav {
     position: fixed;
-    top: 0; left: 0;
-    width: 100%; height: 60px;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 60px;
     background: var(--orange-dark);
     padding: 0 10px;
     display: flex;
@@ -100,11 +115,13 @@ nav span {
 nav ul {
     display: flex;
     list-style: none;
-    margin: 0; padding: 0;
+    margin: 0;
+    padding: 0;
     gap: 24px;
 }
 
-nav ul li a, nav a {
+nav ul li a,
+nav a {
     text-decoration: none;
     color: inherit;
     font-family: var(--font-main);
@@ -118,11 +135,14 @@ nav ul li a, nav a {
     outline: none;
 }
 
-nav ul li a:hover, nav ul li a:focus-visible {
+nav ul li a:hover,
+nav ul li a:focus-visible {
     color: #fff;
 }
 
-nav ul li a:focus-visible, .menu-toggle:focus-visible, .toggle-btn:focus-visible {
+nav ul li a:focus-visible,
+.menu-toggle:focus-visible,
+.toggle-btn:focus-visible {
     outline: 2px solid var(--orange);
     outline-offset: 2px;
 }
@@ -143,7 +163,8 @@ nav ul li a:focus-visible, .menu-toggle:focus-visible, .toggle-btn:focus-visible
     margin-left: 30px;
     padding: 20px;
     border-radius: 50%;
-    width: 44px; height: 44px;
+    width: 44px;
+    height: 44px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -155,7 +176,8 @@ nav ul li a:focus-visible, .menu-toggle:focus-visible, .toggle-btn:focus-visible
     transition: background 0.2s, color 0.3s, transform 0.2s;
 }
 
-.toggle-btn:hover, .toggle-btn:focus-visible {
+.toggle-btn:hover,
+.toggle-btn:focus-visible {
     background: #ddd;
     color: #000;
     box-shadow: 0 4px 12px rgba(0,0,0,0.4);
@@ -164,7 +186,8 @@ nav ul li a:focus-visible, .menu-toggle:focus-visible, .toggle-btn:focus-visible
 
 footer {
     position: fixed;
-    left: 0; bottom: 0;
+    left: 0;
+    bottom: 0;
     width: 100%;
     background: var(--orange-dark);
     color: #222;
@@ -195,7 +218,10 @@ footer {
 
 .header .overlay {
     position: absolute;
-    top: 0; left: 0; right: 0; bottom: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
     background: url('./assets/imgs/header-bg.jpg') center/cover no-repeat;
     opacity: 0.18;
     z-index: 1;
@@ -248,7 +274,8 @@ footer {
     width: 60px;
 }
 
-.header .btn, .btn-rounded {
+.header .btn,
+.btn-rounded {
     border-radius: 22px;
     padding: 12px 32px;
     font-size: 1.1rem;
@@ -262,14 +289,18 @@ footer {
     color: #fff;
 }
 
-.header .btn:hover, .header .btn:focus-visible, .btn-rounded:hover, .btn-rounded:focus-visible {
+.header .btn:hover,
+.header .btn:focus-visible,
+.btn-rounded:hover,
+.btn-rounded:focus-visible {
     background: var(--orange-light);
     color: #222;
     transform: scale(1.04);
     outline: 2px solid var(--orange);
 }
 
-.header .btn a, .btn-rounded a {
+.header .btn a,
+.btn-rounded a {
     color: inherit;
     text-decoration: none;
     font-weight: 600;
@@ -291,7 +322,8 @@ footer {
     text-decoration: none;
 }
 
-.btn-rounded:hover, .btn-rounded:focus-visible {
+.btn-rounded:hover,
+.btn-rounded:focus-visible {
     background: var(--orange);
     color: #fff;
     border-color: var(--orange);
@@ -301,7 +333,8 @@ footer {
 }
 
 /* Typewriter */
-.typewriter, #about-typewriter {
+.typewriter,
+#about-typewriter {
     border-right: none;
     white-space: pre-line;
     overflow: hidden;
@@ -343,9 +376,16 @@ footer {
     flex-wrap: wrap;
 }
 
-#about, .section.pt-0 { padding-top: 0; }
+#about,
+.section.pt-0 {
+    padding-top: 0;
+}
 
-#about-buttons { opacity: 1; transition: opacity 0.5s; }
+#about-buttons {
+    opacity: 1;
+    transition: opacity 0.5s;
+}
+
 #about-buttons button {
     opacity: 0;
     transform: scale(0.7);
@@ -353,7 +393,10 @@ footer {
 }
 
 /* Cards */
-.experience-cards, .portfolio-cards, .achievement-cards, .reference-cards {
+.experience-cards,
+.portfolio-cards,
+.achievement-cards,
+.reference-cards {
     display: flex;
     flex-wrap: wrap;
     gap: 28px;
@@ -361,7 +404,9 @@ footer {
     margin: 18px 0 24px;
 }
 
-.card, .achievement-cards .card, .reference-cards .card {
+.card,
+.achievement-cards .card,
+.reference-cards .card {
     background: #fff;
     color: #000;
     border-radius: 14px;
@@ -377,29 +422,47 @@ footer {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    border: 1px solid rgb(255,146,73);
 }
 
-.card img, .achievement-cards .card img, .reference-cards .card img, .portfolio-cards img {
-    width: 56px; height: 56px;
+.card img,
+.achievement-cards .card img,
+.reference-cards .card img,
+.portfolio-cards img {
+    width: 56px;
+    height: 56px;
     object-fit: contain;
     margin-bottom: 14px;
 }
 
-.portfolio-cards img { width: 100%; height: auto; margin-bottom: 0; }
+.portfolio-cards img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 0;
+}
 
-.card h3, .achievement-cards .card h3, .reference-cards .card h3 {
+.card h3,
+.achievement-cards .card h3,
+.reference-cards .card h3 {
     margin-bottom: 8px;
     font-size: 1.15rem;
     color: var(--orange);
     letter-spacing: 1px;
 }
 
-.card p, .achievement-cards .card p, .reference-cards .card p {
+.card p,
+.achievement-cards .card p,
+.reference-cards .card p {
     color: #444;
     font-size: 0.98rem;
 }
 
-.card:hover, .card:focus-within, .achievement-cards .card:hover, .achievement-cards .card:focus-within, .reference-cards .card:hover, .reference-cards .card:focus-within{
+.card:hover,
+.card:focus-within,
+.achievement-cards .card:hover,
+.achievement-cards .card:focus-within,
+.reference-cards .card:hover,
+.reference-cards .card:focus-within {
     box-shadow: var(--shadow-hover);
     transform: translateY(-4px) scale(1.03);
     outline: none;
@@ -416,6 +479,7 @@ form {
     display: flex;
     flex-direction: column;
     gap: 22px;
+    border: 1px solid rgb(255,146,73);
 }
 
 .form-group {
@@ -424,12 +488,16 @@ form {
     gap: 6px;
 }
 
-.form-group label[for="name"], .form-group label[for="email"], .form-group label[for="message"] {
+.form-group label[for="name"],
+.form-group label[for="email"],
+.form-group label[for="message"] {
     font-weight: 500;
     color: #d32f2f;
 }
 
-input[type="text"], input[type="email"], textarea {
+input[type="text"],
+input[type="email"],
+textarea {
     padding: 12px 14px;
     border: 1.5px solid #373737;
     border-radius: 8px;
@@ -454,13 +522,16 @@ textarea { resize: vertical; }
     transition: background 0.2s, transform 0.2s;
 }
 
-.btn.btn-primary:hover, .btn.btn-primary:focus-visible {
+.btn.btn-primary:hover,
+.btn.btn-primary:focus-visible {
     background: linear-gradient(90deg, #d32f2f 0%, var(--orange) 100%);
     transform: scale(1.04);
     outline: 2px solid var(--orange);
 }
 
-input[type="text"]:focus, input[type="email"]:focus, textarea:focus {
+input[type="text"]:focus,
+input[type="email"]:focus,
+textarea:focus {
     border-color: #ff5858;
     box-shadow: 0 2px 12px rgba(255,174,103,0.683);
 }
@@ -488,7 +559,10 @@ input[type="text"]:focus, input[type="email"]:focus, textarea:focus {
     border-radius: 18px;
 }
 
-.slider-btn, .slider-dots { display: none; }
+.slider-btn,
+.slider-dots {
+    display: none;
+}
 
 .slider-btn {
     position: absolute;
@@ -498,14 +572,16 @@ input[type="text"]:focus, input[type="email"]:focus, textarea:focus {
     color: #fff;
     font-size: 2rem;
     border-radius: 50%;
-    width: 38px; height: 38px;
+    width: 38px;
+    height: 38px;
     cursor: pointer;
     z-index: 2;
     transform: translateY(-50%);
     transition: background 0.2s, transform 0.2s;
 }
 
-.slider-btn:hover, .slider-btn:focus-visible {
+.slider-btn:hover,
+.slider-btn:focus-visible {
     background: var(--orange);
     color: #fff;
     transform: scale(1.08);
@@ -525,7 +601,8 @@ input[type="text"]:focus, input[type="email"]:focus, textarea:focus {
 }
 
 .slider-dots .dot {
-    width: 12px; height: 12px;
+    width: 12px;
+    height: 12px;
     border-radius: 50%;
     background: #fff;
     opacity: 0.7;
@@ -533,7 +610,8 @@ input[type="text"]:focus, input[type="email"]:focus, textarea:focus {
     transition: background 0.2s, transform 0.2s;
 }
 
-.slider-dots .dot.active, .slider-dots .dot:hover {
+.slider-dots .dot.active,
+.slider-dots .dot:hover {
     background: var(--orange);
     opacity: 1;
     transform: scale(1.2);
@@ -550,12 +628,14 @@ input[type="text"]:focus, input[type="email"]:focus, textarea:focus {
     60% { opacity: 0.7; transform: translateY(6px) scale(1.01) rotateX(2deg); filter: blur(1px);}
     100% { opacity: 1; transform: translateY(0) scale(1) rotateX(0); filter: blur(0);}
 }
-.scroll-animate-up, .scroll-animate-down {
+.scroll-animate-up,
+.scroll-animate-down {
     opacity: 0;
     pointer-events: none;
     will-change: opacity, transform, filter;
 }
-.scroll-animate-up.visible, .scroll-animate.visible {
+.scroll-animate-up.visible,
+.scroll-animate.visible {
     animation: fadeInUp 0.7s cubic-bezier(.23,1.02,.57,1.01) both;
     opacity: 1;
     pointer-events: auto;
@@ -581,6 +661,7 @@ input[type="text"]:focus, input[type="email"]:focus, textarea:focus {
     width: 100%;
     overflow: hidden;
     text-align: center;
+    border: 1px solid rgb(255,146,73);
 }
 .video-card-media {
     position: relative;
@@ -589,12 +670,22 @@ input[type="text"]:focus, input[type="email"]:focus, textarea:focus {
 }
 .video-card-media iframe {
     position: absolute;
-    top: 0; left: 0;
-    width: 100%; height: 100%;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
 }
-.video-card-content { padding: 20px; }
-.video-card-content h3 { margin: 0 0 10px; color: orange; }
-.video-card-content p { color: gray; font-size: 15px; }
+.video-card-content {
+    padding: 20px;
+}
+.video-card-content h3 {
+    margin: 0 0 10px;
+    color: orange;
+}
+.video-card-content p {
+    color: gray;
+    font-size: 15px;
+}
 
 /* Responsive Adjustments */
 @media (max-width: 1000px) {
@@ -614,7 +705,8 @@ input[type="text"]:focus, input[type="email"]:focus, textarea:focus {
     nav ul {
         gap: 12px;
         position: absolute;
-        top: 60px; left: 0;
+        top: 60px;
+        left: 0;
         width: 100vw;
         flex-direction: column;
         background: var(--orange);
@@ -632,7 +724,10 @@ input[type="text"]:focus, input[type="email"]:focus, textarea:focus {
 }
 
 /* Light Mode */
-body.light-mode { background: #fff; color: #222; }
+body.light-mode {
+    background: #fff;
+    color: #222;
+}
 
 /* Dark Mode */
 body.dark-mode {
@@ -640,11 +735,15 @@ body.dark-mode {
     color: #f5f5f5;
 }
 body.dark-mode nav { background: var(--dark-nav); }
-body.dark-mode nav span, body.dark-mode nav ul li a, body.dark-mode .menu-toggle { color: var(--yellow); }
+body.dark-mode nav span,
+body.dark-mode nav ul li a,
+body.dark-mode .menu-toggle { color: var(--yellow); }
 body.dark-mode nav span { text-shadow: 2px 2px 8px #000; }
-body.dark-mode nav ul li a:hover, body.dark-mode nav ul li a:focus-visible { color: #fff; }
+body.dark-mode nav ul li a:hover,
+body.dark-mode nav ul li a:focus-visible { color: #fff; }
 body.dark-mode .toggle-btn { background: #222; color: #fff; }
-body.dark-mode .toggle-btn:hover, body.dark-mode .toggle-btn:focus-visible {
+body.dark-mode .toggle-btn:hover,
+body.dark-mode .toggle-btn:focus-visible {
     background-color: var(--orange);
     color: #fff;
     box-shadow: 0 4px 12px rgba(255,255,255,0.4);
@@ -654,22 +753,45 @@ body.dark-mode footer {
     color: #f5f5f5;
     border-top: 1px solid #333;
 }
-body.dark-mode main section, body.dark-mode #achievements, body.dark-mode #references {
+body.dark-mode main section,
+body.dark-mode #achievements,
+body.dark-mode #references {
     background: rgba(34,34,34,0.92);
     box-shadow: 0 4px 24px rgba(0,0,0,0.18);
 }
-body.dark-mode main section:hover { box-shadow: 0 8px 32px rgba(255,213,79,0.13); }
-body.dark-mode main section h1, body.dark-mode main section h2, body.dark-mode #experience h2, body.dark-mode #portfolio h2, body.dark-mode #achievements h2, body.dark-mode #references h2, body.dark-mode .header-title, body.dark-mode .btn-rounded, body.dark-mode .card h3, body.dark-mode .achievement-cards .card h3, body.dark-mode .reference-cards .card h3 {
+body.dark-mode main section:hover {
+    box-shadow: 0 8px 32px rgba(255,213,79,0.13);
+}
+body.dark-mode main section h1,
+body.dark-mode main section h2,
+body.dark-mode #experience h2,
+body.dark-mode #portfolio h2,
+body.dark-mode #achievements h2,
+body.dark-mode #references h2,
+body.dark-mode .header-title,
+body.dark-mode .btn-rounded,
+body.dark-mode .card h3,
+body.dark-mode .achievement-cards .card h3,
+body.dark-mode .reference-cards .card h3 {
     color: var(--yellow);
     text-shadow: 1px 2px 8px #222;
 }
-body.dark-mode main section p, body.dark-mode #experience p, body.dark-mode #portfolio p, body.dark-mode #achievements p, body.dark-mode #references p, body.dark-mode .header-subtitle { color: #e0e0e0; }
+body.dark-mode main section p,
+body.dark-mode #experience p,
+body.dark-mode #portfolio p,
+body.dark-mode #achievements p,
+body.dark-mode #references p,
+body.dark-mode .header-subtitle { color: #e0e0e0; }
 body.dark-mode .header { background: linear-gradient(120deg, #232526 0%, #414345 100%); }
 body.dark-mode .header .overlay { opacity: 0.22; }
 body.dark-mode .header-title .down { color: #f5f5f5; }
-body.dark-mode .header .btn, body.dark-mode .btn-rounded { background: var(--yellow); color: #222; }
+body.dark-mode .header .btn,
+body.dark-mode .btn-rounded { background: var(--yellow); color: #222; }
 body.dark-mode .btn { color: white; }
-body.dark-mode .header .btn:hover, body.dark-mode .header .btn:focus-visible, body.dark-mode .btn-rounded:hover, body.dark-mode .btn-rounded:focus-visible {
+body.dark-mode .header .btn:hover,
+body.dark-mode .header .btn:focus-visible,
+body.dark-mode .btn-rounded:hover,
+body.dark-mode .btn-rounded:focus-visible {
     background: #ffecb3;
     color: var(--dark-bg);
 }
@@ -677,30 +799,51 @@ body.dark-mode .btn-rounded {
     background: transparent;
     box-shadow: 0 2px 8px rgba(255,213,79,0.08);
 }
-body.dark-mode .btn-rounded:hover, body.dark-mode .btn-rounded:focus-visible {
+body.dark-mode .btn-rounded:hover,
+body.dark-mode .btn-rounded:focus-visible {
     background: var(--yellow);
     color: #222;
     border-color: var(--yellow);
     box-shadow: 0 4px 16px rgba(255,213,79,0.18);
 }
-body.dark-mode .card, body.dark-mode .achievement-cards .card, body.dark-mode .reference-cards .card, body.dark-mode form, body.dark-mode .video-card {
+body.dark-mode .card,
+body.dark-mode .achievement-cards .card,
+body.dark-mode .reference-cards .card,
+body.dark-mode form,
+body.dark-mode .video-card {
     background: var(--dark-card);
     color: #f5f5f5;
     box-shadow: var(--shadow-dark);
+    border: 1px solid rgb(255,255,255);
 }
-body.dark-mode .card h3, body.dark-mode .achievement-cards .card h3, body.dark-mode .reference-cards .card h3 { color: var(--yellow); }
-body.dark-mode .card p, body.dark-mode .achievement-cards .card p, body.dark-mode .reference-cards .card p { color: #fff; }
-body.dark-mode .card img, body.dark-mode .achievement-cards .card img, body.dark-mode .reference-cards .card img {
+body.dark-mode .card h3,
+body.dark-mode .achievement-cards .card h3,
+body.dark-mode .reference-cards .card h3 { color: var(--yellow); }
+body.dark-mode .card p,
+body.dark-mode .achievement-cards .card p,
+body.dark-mode .reference-cards .card p { color: #fff; }
+body.dark-mode .card img,
+body.dark-mode .achievement-cards .card img,
+body.dark-mode .reference-cards .card img {
     filter: brightness(1) invert(1) sepia(1) hue-rotate(20deg) saturate(2);
 }
-body.dark-mode #portfolio .card img, body.dark-mode #references img { filter: none; }
-body.dark-mode .card:hover, body.dark-mode .achievement-cards .card:hover, body.dark-mode .card:focus-within, body.dark-mode .achievement-cards .card:focus-within, body.dark-mode .reference-cards .card:hover, body.dark-mode .reference-cards .card:focus-within {
+body.dark-mode #portfolio .card img,
+body.dark-mode #references img { filter: none; }
+body.dark-mode .card:hover,
+body.dark-mode .achievement-cards .card:hover,
+body.dark-mode .card:focus-within,
+body.dark-mode .achievement-cards .card:focus-within,
+body.dark-mode .reference-cards .card:hover,
+body.dark-mode .reference-cards .card:focus-within {
     box-shadow: var(--shadow-dark-hover);
     transform: translateY(-4px) scale(1.03);
 }
-body.dark-mode form { background: var(--dark-card); color: #f5f5f5; }
-body.dark-mode .form-group label[for="name"], body.dark-mode .form-group label[for="email"], body.dark-mode .form-group label[for="message"] { color: var(--yellow); }
-body.dark-mode input[type="text"], body.dark-mode input[type="email"], body.dark-mode textarea {
+body.dark-mode .form-group label[for="name"],
+body.dark-mode .form-group label[for="email"],
+body.dark-mode .form-group label[for="message"] { color: var(--yellow); }
+body.dark-mode input[type="text"],
+body.dark-mode input[type="email"],
+body.dark-mode textarea {
     background: #3e3e3e;
     color: #f5f5f5;
     border: 1.5px solid #808080;
@@ -708,41 +851,63 @@ body.dark-mode input[type="text"], body.dark-mode input[type="email"], body.dark
 body.dark-mode .btn.btn-primary {
     background: linear-gradient(90deg, var(--yellow) 0%, #ff5722 100%);
 }
-body.dark-mode .btn.btn-primary:hover, body.dark-mode .btn.btn-primary:focus-visible {
+body.dark-mode .btn.btn-primary:hover,
+body.dark-mode .btn.btn-primary:focus-visible {
     background: linear-gradient(90deg, #ff5722 0%, var(--yellow) 100%);
 }
-body.dark-mode input[type="text"]:focus, body.dark-mode input[type="email"]:focus, body.dark-mode textarea:focus {
+body.dark-mode input[type="text"]:focus,
+body.dark-mode input[type="email"]:focus,
+body.dark-mode textarea:focus {
     border-color: var(--yellow);
     box-shadow: 0 2px 12px rgba(255,213,79,0.272);
 }
 body.dark-mode .video-card-media { background: #222; }
-
-@media (max-width: 700px) { body.dark-mode nav ul { background: #3e3e3e; } }
+@media (max-width: 700px) {
+    body.dark-mode nav ul { background: #3e3e3e; }
+}
 @media (max-width: 600px) {
     body.dark-mode .header-title { font-size: 1.4rem; }
     body.dark-mode .header-content { padding: 24px 8px; }
-    body.dark-mode .card, body.dark-mode .achievement-cards .card, body.dark-mode .reference-cards .card { width: 95vw; max-width: 360px; padding: 16px 8px; }
+    body.dark-mode .card,
+    body.dark-mode .achievement-cards .card,
+    body.dark-mode .reference-cards .card {
+        width: 95vw;
+        max-width: 360px;
+        padding: 16px 8px;
+    }
 }
 @media (max-width: 500px) {
     body.dark-mode .header-title { font-size: 1.3rem; }
     body.dark-mode .header-content { padding: 20px 6px; }
     body.dark-mode nav ul { gap: 8px; }
-    body.dark-mode .achievement-cards, body.dark-mode .reference-cards { flex-direction: column; align-items: center; gap: 12px; }
+    body.dark-mode .achievement-cards,
+    body.dark-mode .reference-cards { flex-direction: column; align-items: center; gap: 12px; }
 }
 @media (max-width: 400px) {
     body.dark-mode .header-title { font-size: 1.2rem; }
     body.dark-mode .header-content { padding: 16px 4px; }
     body.dark-mode nav ul { padding: 8px; }
-    body.dark-mode .achievement-cards .card, body.dark-mode .reference-cards .card { width: 90vw; max-width: 340px; padding: 14px 6px; }
+    body.dark-mode .achievement-cards .card,
+    body.dark-mode .reference-cards .card {
+        width: 90vw;
+        max-width: 340px;
+        padding: 14px 6px;
+    }
 }
 @media (max-width: 300px) {
     body.dark-mode .header-title { font-size: 1.1rem; }
     body.dark-mode .header-content { padding: 12px 2px; }
     body.dark-mode nav ul { padding: 6px; }
-    body.dark-mode .achievement-cards .card, body.dark-mode .reference-cards .card { width: 85vw; max-width: 320px; padding: 12px 4px; }
+    body.dark-mode .achievement-cards .card,
+    body.dark-mode .reference-cards .card {
+        width: 85vw;
+        max-width: 320px;
+        padding: 12px 4px;
+    }
 }
-
-body.dark-mode main section:hover, body.dark-mode #achievements:hover, body.dark-mode #references:hover {
+body.dark-mode main section:hover,
+body.dark-mode #achievements:hover,
+body.dark-mode #references:hover {
     box-shadow: 0 8px 32px rgba(255,213,79,0.13);
 }
 
@@ -763,9 +928,11 @@ body.dark-mode main section:hover, body.dark-mode #achievements:hover, body.dark
 /* Modal */
 .modal {
     position: fixed;
-    top: 0; left: 0;
+    top: 0;
+    left: 0;
     z-index: 9999;
-    width: 100%; height: 100%;
+    width: 100%;
+    height: 100%;
     background-color: rgba(0,0,0,0.7);
     display: flex;
     align-items: center;
@@ -784,7 +951,8 @@ body.dark-mode main section:hover, body.dark-mode #achievements:hover, body.dark
 }
 .modal-close {
     position: absolute;
-    top: 16px; right: 16px;
+    top: 16px;
+    right: 16px;
     font-size: 28px;
     font-weight: bold;
     color: #333;
@@ -810,11 +978,15 @@ body.dark-mode main section:hover, body.dark-mode #achievements:hover, body.dark
     from { opacity: 0; transform: scale(0.9);}
     to { opacity: 1; transform: scale(1);}
 }
-body.dark-mode .modal-content { background: var(--dark-card); color: #f5f5f5; }
+body.dark-mode .modal-content {
+    background: var(--dark-card);
+    color: #f5f5f5;
+}
 body.dark-mode .modal-close { color: #f5f5f5; }
-body.dark-mode .modal-images img { filter: brightness(1) contrast(0.9);}
-body.dark-mode .modal-images img:hover { filter: brightness(1) contrast(1);}
-body.dark-mode .modal-images img:focus, body.dark-mode .modal-images img:focus-visible {
+body.dark-mode .modal-images img { filter: brightness(1) contrast(0.9); }
+body.dark-mode .modal-images img:hover { filter: brightness(1) contrast(1); }
+body.dark-mode .modal-images img:focus,
+body.dark-mode .modal-images img:focus-visible {
     outline: 2px solid var(--yellow);
     outline-offset: 4px;
 }
@@ -828,12 +1000,27 @@ body.dark-mode .modal-images img:focus, body.dark-mode .modal-images img:focus-v
 
 /* Modal fade out */
 .modal.fade-out { animation: fadeOut 0.3s; }
-@keyframes fadeOut { from { opacity: 1;} to { opacity: 0;} }
-
-body.dark-mode section .portfolio-cards .card img{
-    border: 2px solid var(--yellow);
+@keyframes fadeOut {
+    from { opacity: 1; }
+    to { opacity: 0; }
 }
-body.dark-mode section, body.dark-mode .header, body.dark-mode .video-card, body.dark-mode .card, body.dark-mode .achievement-cards .card, body.dark-mode .reference-cards .card, body.dark-mode form, body.dark-mode #achievementModal .modal-content, body.dark-mode #achievementModal .modal-content img {
-    transition: background-color 1s, color 1s, box-shadow 0.4s, border-color 1s, filter 1s, outline-color 1s;
-    border: 1px solid rgb(255, 255, 255);
+
+body.dark-mode section .portfolio-cards .card img { border: 2px solid var(--yellow); }
+
+#progress-bar-container {
+    position: fixed;
+    top: 60px;
+    left: 0;
+    width: 100%;
+    height: 5px;
+    z-index: 2000;
+}
+#progress-bar {
+    height: 100%;
+    width: 0;
+    background: linear-gradient(to right, #ff9800, #ff5722, #ff5722, #ff9800);
+    transition: width 0.2s;
+}
+body.dark-mode #progress-bar {
+    background: linear-gradient(to right, #ff5722, #ff9800, #ff9800, #ff5722);
 }
