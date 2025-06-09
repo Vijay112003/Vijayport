@@ -260,3 +260,10 @@ window.addEventListener('scroll', () => {
 scrollBtn.addEventListener('click', () => {
     document.getElementById('body').scrollIntoView({ behavior: 'smooth' });
 });
+
+window.addEventListener('scroll', function() {
+    const scrollTop = window.scrollY || document.documentElement.scrollTop;
+    const docHeight = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+    const scrolled = docHeight > 0 ? (scrollTop / docHeight) * 100 : 0;
+    document.getElementById('progress-bar').style.width = scrolled + '%';
+});
