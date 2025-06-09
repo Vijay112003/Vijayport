@@ -267,3 +267,33 @@ window.addEventListener('scroll', function() {
     const scrolled = docHeight > 0 ? (scrollTop / docHeight) * 100 : 0;
     document.getElementById('progress-bar').style.width = scrolled + '%';
 });
+   
+// Highlight current section in navbar
+document.addEventListener('DOMContentLoaded', function () {
+    const sections = document.querySelectorAll('main section[id]');
+    const navLinks = document.querySelectorAll('.nav-link');
+
+    function onScroll() {
+        let scrollPos = window.scrollY || window.pageYOffset;
+        let offset = 100; // adjust if needed for header height
+
+        let currentSectionId = '';
+        sections.forEach(section => {
+            if (section.offsetTop - offset <= scrollPos) {
+                currentSectionId = section.id;
+            }
+        });
+
+        navLinks.forEach(link => {
+            if (link.getAttribute('href') === '#' + currentSectionId) {
+                link.classList.add('active');
+            } else {
+                link.classList.remove('active');
+            }
+        });
+    }
+
+    window.addEventListener('scroll', onScroll);
+    onScroll();
+});
+        

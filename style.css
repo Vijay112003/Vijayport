@@ -1024,3 +1024,14 @@ body.dark-mode section .portfolio-cards .card img { border: 2px solid var(--yell
 body.dark-mode #progress-bar {
     background: linear-gradient(to right, #ff5722, #ff9800, #ff9800, #ff5722);
 }
+
+/* Navbar active link style */
+#navbar .nav-link.active {
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+}
+
+body.dark-mode #navbar .nav-link.active {
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+}
