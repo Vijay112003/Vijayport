@@ -2,9 +2,9 @@
 
 // Image arrays for light and dark mode
 const sliderImagesLight = [
-    "assets/imgs/2.jpeg",
-    "assets/imgs/1.jpeg",
-    "assets/imgs/3.jpeg"
+    "assets/imgs/1.png",
+    "assets/imgs/2.png",
+    "assets/imgs/3.png"
 ];
 const sliderImagesDark = [
     "assets/imgs/4.jpeg",
@@ -297,3 +297,21 @@ document.addEventListener('DOMContentLoaded', function () {
     onScroll();
 });
         
+
+function setThemeColor(theme) {
+    var themeStyle = document.getElementById('theme-style');
+    let href = 'style.css';
+    if (theme === 'zoho-red') href = 'style-red.css';
+    else if (theme === 'zoho-yellow') href = 'style-yellow.css';
+    else if (theme === 'zoho-blue') href = 'style-blue.css';
+    themeStyle.setAttribute('href', href);
+    localStorage.setItem('theme-color', theme);
+}
+// On page load, restore theme
+(function() {
+    const saved = localStorage.getItem('theme-color');
+    if (saved) {
+        setThemeColor(saved);
+        document.getElementById('theme-color-select').value = saved;
+    }
+})();

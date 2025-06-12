@@ -29,7 +29,7 @@ form,
     transition: background-color 1s, color 1s, box-shadow .4s, border-color 1s, filter 1s, outline-color 1s;
 }
 body {
-    background: #fff;
+    background: #ffffff;
     color: #222;
     font-family: var(--font-main);
     transition: background-color 2s, color 2s, box-shadow 1s, border-color 2s, filter 2s, outline-color 2s, all 2s;

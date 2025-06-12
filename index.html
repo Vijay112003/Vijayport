@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <title>VIJAY SARATHI</title>
     <link rel="icon" type="image/png" href="assets/imgs/profile.ico">
-    <link rel="stylesheet" href="style.css">
+    <link id="theme-style" rel="stylesheet" href="style.css">
 </head>
 <br>
 <body id="body">
@@ -22,6 +22,30 @@
                 <li><a href="#references" class="nav-link">References</a></li>
                 <li><a href="#contact" class="nav-link">Contact</a></li>
             </ul>
+            <div style="display: flex; align-items: center; margin-left: 1rem;">
+                <label for="theme-color-select" style="margin-right: 0.5rem; font-size: 1rem; color: inherit; cursor: pointer;">
+                    🎨
+                </label>
+                <select id="theme-color-select"
+                        aria-label="Select Theme Color"
+                        onchange="setThemeColor(this.value)"
+                        style="
+                            padding: 0.3em 1.5em 0.3em 0.7em;
+                            border-radius: 20px;
+                            border: 1px solid #ccc;
+                            background: var(--navbar-bg, #fff);
+                            color: var(--navbar-text, #222);
+                            font-size: 1rem;
+                            outline: none;
+                            transition: border 0.2s;
+                            cursor: pointer;
+                        ">
+                    <option value="default">Default</option>
+                    <option value="zoho-red">Red</option>
+                    <option value="zoho-yellow">Yellow</option>
+                    <option value="zoho-blue">Blue</option>
+                </select>
+            </div>
             <button class="toggle-btn" onclick="toggleMode()" aria-label="Toggle Dark/Light Mode">
                 <span id="mode-icon">
                     <svg id="sun-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
