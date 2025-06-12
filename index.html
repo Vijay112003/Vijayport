@@ -20,49 +20,49 @@
             <li><a href="#references" class="nav-link">References</a></li>
             <li><a href="#contact" class="nav-link">Contact</a></li>
         </ul>
-        <div style="display: flex; align-items: center; margin-left: 1rem;">
-            <label for="theme-color-select" style="margin-right: 0.5rem; font-size: 1rem; color: inherit; cursor: pointer;">
-                🎨
-            </label>
-            <select id="theme-color-select"
-                    aria-label="Select Theme Color"
-                    onchange="setThemeColor(this.value)"
-                    style="padding: 0.3em 1.5em 0.3em 0.7em; border-radius: 20px; border: 1px solid #ccc; background: var(--navbar-bg, #fff); color: var(--navbar-text, #222); font-size: 1rem; outline: none; transition: border 0.2s; cursor: pointer;">
-                <option value="default">Default</option>
+        <div style="display: flex; align-items: center; margin-left: auto;">
+            <button class="toggle-btn" onclick="toggleMode()" aria-label="Toggle Dark/Light Mode" style="margin-right: 1rem;">
+            <span id="mode-icon">
+                <svg id="sun-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="12" cy="12" r="5"/>
+                <g id="sun-rays-light">
+                    <path d="M12 2v2"/>
+                    <path d="M12 20v2"/>
+                    <path d="M4.93 4.93l1.06 1.06"/>
+                    <path d="M17.99 17.99l1.06 1.06"/>
+                    <path d="M2 12h2"/>
+                    <path d="M20 12h2"/>
+                    <path d="M4.93 19.07l1.06-1.06"/>
+                    <path d="M17.99 6.01l1.06-1.06"/>
+                </g>
+                <g id="sun-rays-dark" style="display:none;">
+                    <path d="M12 1v4"/>
+                    <path d="M12 19v4"/>
+                    <path d="M3.51 3.51l2.12 2.12"/>
+                    <path d="M18.37 18.37l2.12 2.12"/>
+                    <path d="M1 12h4"/>
+                    <path d="M19 12h4"/>
+                    <path d="M3.51 20.49l2.12-2.12"/>
+                    <path d="M18.37 5.63l2.12-2.12"/>
+                </g>
+                </svg>
+            </span>
+            </button>
+            <div style="display: flex; align-items: center;">
+            <select
+                id="theme-color-select"
+                aria-label="Select Theme Color"
+                onchange="setThemeColor(this.value)"
+                style="padding: 0.3em 1.5em 0.3em 0.7em; border-radius: 20px; border: 1px solid #ccc; background: var(--navbar-bg, #fff); color: var(--navbar-text, #222); font-size: 1rem; outline: none; transition: border 0.2s; cursor: pointer;">
+                <option value="default">🎨</option>
                 <option value="zoho-red">Orange</option>
                 <option value="zoho-yellow">Yellow</option>
                 <option value="zoho-green">Green</option>
                 <option value="zoho-blue">Blue</option>
                 <option value="zoho-purple">Purple</option>
             </select>
+            </div>
         </div>
-        <button class="toggle-btn" onclick="toggleMode()" aria-label="Toggle Dark/Light Mode">
-            <span id="mode-icon">
-                <svg id="sun-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                    <circle cx="12" cy="12" r="5"/>
-                    <g id="sun-rays-light">
-                        <path d="M12 2v2"/>
-                        <path d="M12 20v2"/>
-                        <path d="M4.93 4.93l1.06 1.06"/>
-                        <path d="M17.99 17.99l1.06 1.06"/>
-                        <path d="M2 12h2"/>
-                        <path d="M20 12h2"/>
-                        <path d="M4.93 19.07l1.06-1.06"/>
-                        <path d="M17.99 6.01l1.06-1.06"/>
-                    </g>
-                    <g id="sun-rays-dark" style="display:none;">
-                        <path d="M12 1v4"/>
-                        <path d="M12 19v4"/>
-                        <path d="M3.51 3.51l2.12 2.12"/>
-                        <path d="M18.37 18.37l2.12 2.12"/>
-                        <path d="M1 12h4"/>
-                        <path d="M19 12h4"/>
-                        <path d="M3.51 20.49l2.12-2.12"/>
-                        <path d="M18.37 5.63l2.12-2.12"/>
-                    </g>
-                </svg>
-            </span>
-        </button>
     </nav>
     <!-- Progress Bar -->
     <div id="progress-bar-container">
