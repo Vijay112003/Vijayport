@@ -887,7 +887,7 @@ body.dark-mode .reference-cards .card p { color: var(--white); }
 body.dark-mode .card img,
 body.dark-mode .achievement-cards .card img,
 body.dark-mode .reference-cards .card img {
-    filter: brightness(1) invert(0.2) sepia(1) hue-rotate(-10deg) saturate(6);
+    filter: brightness(1) invert(0.1) sepia(1) hue-rotate(-20deg) saturate(8);
 }
 body.dark-mode #portfolio .card img,
 body.dark-mode #references img { filter: none; }
