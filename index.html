@@ -5,6 +5,16 @@
     <title>VIJAY SARATHI</title>
     <link rel="icon" type="image/png" href="assets/imgs/profile.ico">
     <link id="theme-style" rel="stylesheet" href="style.css">
+    <style>
+        #theme-color-select {
+            font-style: oblique;
+            font-weight: bolder;
+            color: var(--navbar-text, #222);
+            background-color: var(--navbar-bg, #fff);
+            border: 1px solid var(--navbar-border, #ccc);
+            transition: background-color 0.3s, color 0.3s, border-color 0.3s;
+        }
+    </style>
 </head>
 <body id="body">
     <nav>
@@ -54,9 +64,9 @@
                 aria-label="Select Theme Color"
                 onchange="setThemeColor(this.value)"
                 style="padding: 0.3em 1.5em 0.3em 0.7em; border-radius: 20px; border: 1px solid #ccc; background: var(--navbar-bg, #fff); color: var(--navbar-text, #222); font-size: 1rem; outline: none; transition: border 0.2s; cursor: pointer;">
-                <option value="default">🎨</option>
-                <option value="zoho-red">Orange</option>
-                <option value="zoho-yellow">Yellow</option>
+                <option value="default" class="theme-red">🎨 Default</option>
+                <option value="zoho-red" class="theme-orange">🎨 Orange</option>
+                <option value="zoho-yellow" class="theme-yellow">🎨 Yellow</option>
                 <!-- <option value="zoho-green">Green</option>
                 <option value="zoho-blue">Blue</option> -->
                 <!-- <option value="zoho-purple">Purple</option> -->

@@ -1069,3 +1069,14 @@ body.dark-mode nav ul li a:focus-visible {
 body.dark-mode .slides img {
     filter: grayscale(1) contrast(1) brightness(1) hue-rotate(200deg) saturate(3);
 }
+
+body section{
+    max-width: 1100px;
+}
+
+.contact-info-section{
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 24px;
+}
