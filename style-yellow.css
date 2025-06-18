@@ -30,8 +30,8 @@ html {
 }
 body {
      line-height: 1.5;
-     background: linear-gradient(to left, #e59f3561, #fffdf752);
      color: var(--gray);
+     background: linear-gradient(to left, #e5ce3561, #fffdf752);
      font-family: var(--font-main);
      transition: background-color 2s, color 2s, box-shadow 1s, border-color 2s, filter 2s, outline-color 2s, all 2s;
 }
