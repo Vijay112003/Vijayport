@@ -323,9 +323,6 @@ function setThemeColor(theme) {
     let href = 'style-red.css';
     if (theme === 'zoho-red') href = 'style.css';
     else if (theme === 'zoho-yellow') href = 'style-yellow.css';
-    else if (theme === 'zoho-green') href = 'style-green.css';
-    else if (theme === 'zoho-blue') href = 'style-blue.css';
-    else if (theme === 'zoho-purple') href = 'style-purple.css';
     themeStyle.setAttribute('href', href);
     localStorage.setItem('theme-color', theme);
 }
