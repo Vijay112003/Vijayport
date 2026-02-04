@@ -22,7 +22,7 @@
             <span>VIJAY SARATHI</span>
         </a>
         <ul id="navbar">
-            <li><a href="#home" class="nav-link">Home</a></li>
+            <li><a href="#" class="nav-link">Home</a></li>
             <li><a href="#about" class="nav-link">About</a></li>
             <li><a href="#experience" class="nav-link">Experience</a></li>
             <li><a href="#portfolio" class="nav-link">Portfolio</a></li>
@@ -83,7 +83,7 @@
         <button id="scrollToTopBtn" aria-label="Scroll to Top" onclick="window.scrollTo({top: 0, behavior: 'smooth'});">
             &#8679;
         </button>
-        <header id="home" class="header scroll-animate">
+        <header class="header scroll-animate">
             <!-- Image Slider Start -->
             <div class="image-slider scroll-animate">
                 <div class="slides">
@@ -124,13 +124,13 @@
                 </div>
                 <div class="video-card-content">
                     <h3>Introduction Video</h3>
-                    <p>
+                    <p id="about">
                         Watch my quick introduction and get to know more about my journey and skills.
                     </p>
                 </div>
             </div>
         </section>
-        <section class="section pt-0 scroll-animate" id="about">
+        <section class="section pt-0 scroll-animate">
             <div class="about-section-title-center">
                 <br><br><br>
                 <p class="section-subtitle zoho-yellow">Who Am I?</p>
@@ -147,7 +147,7 @@
                         <button class="btn-rounded btn btn-outline-primary mt-4 scroll-animate"><a href="https://www.linkedin.com/in/vijay-sarathi-g-b-e-493033241/" target="_blank">Linked-in</a></button>
                         <button class="btn-rounded btn btn-outline-primary mt-4 scroll-animate"><a href="https://www.codechef.com/users/vijay_sarathi" target="_blank">Code-chef</a></button>
                         <button class="btn-rounded btn btn-outline-primary mt-4 scroll-animate"><a href="https://www.hackerrank.com/profile/vijaywithccet" target="_blank">HackerRank</a></button>
-                        <button class="btn-rounded btn btn-outline-primary mt-4 scroll-animate"><a href="https://leetcode.com/vijaywithccet/" target="_blank">Leet-code</a></button>
+                        <button id="experience" class="btn-rounded btn btn-outline-primary mt-4 scroll-animate"><a href="https://leetcode.com/vijaywithccet/" target="_blank">Leet-code</a></button>
                     </div>
                 </div>
                 <!-- Right: Profile Image -->
@@ -156,7 +156,7 @@
                 </div>
             </div>
         </section>
-        <section id="experience" class="scroll-animate">
+        <section class="scroll-animate">
             <div style="text-align: center;">
                 <h2>Experience</h2>
                 <p>Details about my experience.</p>
@@ -171,10 +171,7 @@
                     <img src="assets/imgs/analytics.svg" alt="Database">
                     <h3>Database</h3>
                     <p>
-                        SQLite3 in Python<br>
-                        MySQL<br>
-                        JDBC in Java<br>
-                        MongoDB in Python
+                        SQLite3 in Python<br>MySQL<br>JDBC in Java<br>MongoDB in Python
                     </p>
                 </div>
             </div>
@@ -183,25 +180,19 @@
                     <img src="assets/imgs/responsive.svg" alt="Tools & Platforms">
                     <h3>Tools & Platforms</h3>
                     <p>
-                        GitHub<br>
-                        ChatGPT<br>
-                        VS Code<br>
-                        Git
+                        GitHub<br>ChatGPT<br>VS Code<br>Git
                     </p>
                 </div>
                 <div class="card scroll-animate">
                     <img src="assets/imgs/toolbox.svg" alt="Languages">
                     <h3>Languages</h3>
-                    <p>
-                        Python<br>
-                        Java<br>
-                        C++<br>
-                        C
+                    <p id="portfolio">
+                        Python<br>Java<br>C++<br>C
                     </p>
                 </div>
             </div>
         </section>
-        <section id="portfolio" class="scroll-animate">
+        <section class="scroll-animate">
             <div style="text-align: center;">
                 <h2>Portfolio</h2>
                 <p>My work portfolio.</p>
@@ -235,11 +226,11 @@
                 <a href="https://github.com/Vijay112003/Project-J.U.N.E" target="_blank" class="card scroll-animate">
                     <img src="assets/imgs/projects/movie.png" alt="MRS">
                     <h3>J.U.N.E</h3>
-                    <p>Category: Automation</p>
+                    <p id="achievements">Category: Automation</p>
                 </a>
             </div>
         </section>
-        <section id="achievements" class="scroll-animate">
+        <section class="scroll-animate">
             <div style="text-align: center;">
                 <h2>Achievements</h2>
                 <p>My achievements and recognitions.</p>
@@ -266,7 +257,7 @@
                         <img src="./assets/imgs/others.webp" alt="Achievements">
                     </div>
                     <h6>Others</h6>
-                    <button type="button" class="btn btn-primary" data-image-id="3">View</button>
+                    <button id="references" type="button" class="btn btn-primary" data-image-id="3">View</button>
                 </div>
             </div>
         </section>
@@ -278,7 +269,7 @@
                 <div class="modal-images"></div>
             </div>
         </div>
-        <section id="references" class="scroll-animate">
+        <section class="scroll-animate">
             <div style="text-align: center;">
                 <h2>References</h2>
                 <p>References from mentors.</p>
@@ -293,18 +284,18 @@
                         <p>Chettinad College of Engineering & Technology, Karur<br>Email: rajkumar@chettinadtech.ac.in<!--<br>Mobile: +91 97872 88434--></p>
                     </div>
                 </a>
-                <a href="https://www.linkedin.com/in/dr-tgobinath/" target="_blank" class="card scroll-animate" style="text-decoration: none; color: inherit;">
+                <a href="https://www.linkedin.com/in/gobinath-t-42938231b/" target="_blank" class="card scroll-animate" style="text-decoration: none; color: inherit;">
                     <div style="align-items: center;">
                         <img src="./assets/imgs/ref2.jpg" alt="Reference 2">
                     </div>
                     <div>
                         <h6>Dr.T.Gobinath, AP/CSE</h6>
-                        <p>Chettinad College of Engineering & Technology, karur<br>Email: gobinath19@gmail.com<!--<br>Mobile: +91 99445 88207--></p>
+                        <p id="contact">Chettinad College of Engineering & Technology, karur<br>Email: gobinath19@gmail.com<!--<br>Mobile: +91 99445 88207--></p>
                     </div>
                 </a>
             </div>
         </section>
-        <section id="contact" class="scroll-animate">
+        <section class="scroll-animate">
             <div style="text-align: center;">
                 <h2>Contact Me</h2>
                 <p>How to get in touch with me.</p>
@@ -324,14 +315,14 @@
                 </div>
                 <button type="submit" class="btn btn-primary">Send</button>
             </form>
-            <div class="contact-info-section">
+            <!-- <div class="contact-info-section">
                 <div class="contact-info scroll-animate">
                     <h3>My Contact Info</h3>
                     <p><strong>Email:</strong> <a href="mailto:vijaywithccet@gmail.com" style="text-decoration: none;">vijaywithccet@gmail.com</a></p>
                     <p><strong>Mobile:</strong> <a href="tel:+919080123456" style="text-decoration: none;">+91 99445 76011</a></p>
                     <p><strong>Location:</strong> Trichy, Tamil Nadu, India</p>
                 </div>
-                <!-- <div class="map-container scroll-animate">
+                <div class="map-container scroll-animate">
                     <h3>Location</h3>
                     <iframe
                         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1257.914067796565!2d78.298538!3d10.550905!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMTDCsDMzJzAzLjMiTiA3OMKwMTcnNTQuNyJF!5e1!3m2!1sen!2sin!4v1718020000000!5m2!1sen!2sin"
@@ -342,8 +333,8 @@
                         loading="lazy"
                         referrerpolicy="no-referrer-when-downgrade">
                     </iframe>
-                </div> -->
-            </div>
+                </div>
+            </div> -->
         </section>
     </main>
     <!--

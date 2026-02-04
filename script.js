@@ -335,3 +335,10 @@ document.addEventListener('DOMContentLoaded', function() {
         if (themeSelect) themeSelect.value = saved;
     }
 });
+
+document.getElementById('navbar').querySelector('a').addEventListener('click', function() {
+    let scrollToTopBtn = document.getElementById('scrollToTopBtn');
+    if (scrollToTopBtn) {
+        scrollToTopBtn.click();
+    }
+});
