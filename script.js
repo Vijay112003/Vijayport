@@ -234,16 +234,9 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
 
-    function closeModal() {
-        modal.classList.add('fade-out');
-        setTimeout(() => {
-            modal.classList.add('hidden');
-            modal.classList.remove('fade-out');
-        }, 300);
-    }
     modal.addEventListener('click', function(event) {
         if (event.target === modal) {
-            closeModal();
+            closeModal(modal);
         }
     });
 
@@ -342,3 +335,38 @@ document.getElementById('navbar').querySelector('a').addEventListener('click', f
         scrollToTopBtn.click();
     }
 });
+
+function closeModal(modal) {
+    let existingEmail = sessionStorage.getItem("visitor_email");
+    let existingUrl = sessionStorage.getItem("visit_for_the_site");
+    if (!existingEmail && !existingUrl) {
+        document.getElementById("emailAlert").style.display = "block";
+        document.getElementById("emailAlert").innerText = "Please share your email to explore the site. Others won't be able to visit my site.";
+        return;
+    }
+    modal.classList.add('fade-out');
+    setTimeout(() => {
+        modal.classList.add('hidden');
+        modal.classList.remove('fade-out');
+    }, 300);
+}
+
+let trimAll = function(value) {
+  // check for all spaces
+  let objRegExp = /^(\s*)$/;
+  if (objRegExp.test(value)) {
+    value = value.replace(objRegExp, '');
+    if (value.length === 0) {
+      return value;
+    }
+  }
+
+  // check for leading and trailling spaces
+  objRegExp = /^(\s*)([\W\w]*)(\b\s*$)/;
+  if (objRegExp.test(value)) {
+    value = value.replace(objRegExp, '$2');
+  }
+  return value;
+};
+
+const isEmailID = (value) => /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/.test(trimAll(value));
